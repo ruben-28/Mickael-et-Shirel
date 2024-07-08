@@ -10,10 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Hebrew:wght@100..900&display=swap" rel="stylesheet">
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>test mariage</title>
+    <title>Mickael & Shirel</title>
 </head>
 <body>
 
@@ -134,9 +135,9 @@
     <div class ="txt">
         <p id="oui">Mickael & Shirel</p>
         <p id="txt_mairie">
-            Se diront;<br>
+            Se diront;   <!--aaaaa-->
         </p>
-        <p id="oui">"OUI"<br></p>
+        <p id="oui">"OUI"</p>  <!--aaaaa-->
          <p id="txt_mairie">
             Le Lundi 24 Juin 2024<br>
             
@@ -225,26 +226,26 @@
                 <div class="name_field">
                     <div>
                         <label class="Rlabel">Nom:<br></label>
-                        <input type="text" name="nom">
+                        <input type="text" name="nom" id="nomReponse">
                     </div>
-                    <br>
+                    <!--aaaaa-->
                     <div>
                         <label class="Rlabel">Prénom:<br></label>
-                        <input type="text" name="prénom">
+                        <input type="text" name="prénom"  id="prenomReponse">
                     </div>
-                    <br>
+                    <!--aaaaa-->
                 </div>
-                <br>
+                <!--aaaaa-->
                 <div class="checkbox-field">
-                    <input type="checkbox">
-                    <label class="Rlabel" name="vientPas" id="AssisseterontPas">Ne pourront pas assisster</label>
+                    
+                    <label class="Rlabel" name="vientPas" id="AssisseterontPas"> <input type="checkbox"> Ne pourront pas assisster</label>
                 </div>
-                <br>
-               <div>
+                <!--aaaaa-->
+               <div class="caseReponse">
                 <label class="check_choice">
                     Assisseteront à : 
                 </label>
-                <br>
+                <!--aaaaa-->
                     <input type="checkbox">
                     <label class="Rlabel" name="mairie" id="AssisseterontALaMairie">La Mairie</label>
     
@@ -254,7 +255,7 @@
                     <input type="checkbox">
                     <label class="Rlabel" name="reception" id="AssisseterontALaReception">La Réception</label>
                </div>
-               <br>
+               <!--aaaaa-->
     
                <label class="Rlabel">Nombre de personnes:</label>
                <input type="number" min="0" max="15" name="numberOfGuests">
@@ -262,7 +263,7 @@
                <label class="Rlabel">Messages aux mariés:</label>
                <input type="text" placeholder="Mazal Tov !!!!" name="messageMariés" style="position: top;  justify-content: top; display: inline-block;" >
 
-               <button id="sendEmailBtn"  class="sendemail" type="submit"  action="mailertest.php">envoyer</button>
+               <button id="sendEmailBtn"  class="sendemail" type="submit"  action="mailertest.php">Envoyer</button>
             </div>
             
         </form>

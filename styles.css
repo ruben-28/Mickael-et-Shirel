@@ -143,6 +143,7 @@ p{
     
     opacity: 1; /* Rendre le texte complètement opaque */
     margin-top: 0;
+    margin-bottom: 1em;
 }
 
 #RSVP {
@@ -168,6 +169,10 @@ p{
 .Rlabel{
     font-size: 150%;
     gap: 3vw;
+    
+}
+#nomReponse , #prenomReponse , #AssisseterontPas{
+    margin-bottom: 1em;
 }
 
 input[type="text"]
@@ -201,7 +206,9 @@ input[name="messageMariés"]::placeholder {
 }
 
 
-
+.name_field{
+    margin-bottom: 1em;
+}
 
 .checkbox-field {
     display: flex;
@@ -216,9 +223,13 @@ input[name="messageMariés"]::placeholder {
     display: flex;
     justify-content: center;
     font-size: 150%;
-    margin-bottom: 0;
+    margin-bottom: 1em;
     font-style: italic;
     font-weight: bold;
+}
+
+.caseReponse{
+    margin-bottom: 2em;
 }
 
 .btn {
@@ -398,19 +409,27 @@ input[name="messageMariés"]::placeholder {
         margin-top: 1%;
         font-size: 120%;
         border-radius: 5rem;
-        padding: 1% 3%;
+        padding: 0.5% 2.5%;
+        color: #87693a;
+        border: 2px solid #87693a;
+        background-color:#f4e5d5
+    }
 
+    .sendemail:hover{
+        background-color: #87693a; /* Changement de couleur de fond au survol */
+        color: #fff; /* Changement de couleur du texte au survol */
     }
     
     .contact{
         height: 7vh;
         background-color: #F5EEE6;
         /* padding: 5%; */
-        display: inline-flex;
+        display: flex;
         justify-content: center; /* Les éléments enfants sont distribués de manière à ce que les marges extérieures soient égales */
         align-items: center; /*Alignement vertical au centre */
-        font-size: 100%;   
-        width: 100vw;     
+        font-size: 80%;   
+        width: 100vw;    
+        gap: 1%; 
     }
 
     .contactBtn{
@@ -418,13 +437,15 @@ input[name="messageMariés"]::placeholder {
         color: black;
         border: 2px solid black;
         border-radius: 5%;
-        padding: 1% 5%;
-        border-radius: 5rem;
+        padding: 0.5% 3%;
+        
+        border-radius: 3rem;
         /* background-color: white;
         
         border-radius: 5000px; */
         font-weight: 500;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         
@@ -611,6 +632,7 @@ input[name="messageMariés"]::placeholder {
         
         opacity: 1; /* Rendre le texte complètement opaque */
         margin-top: 0;
+        margin-bottom: 1em;
     }
     
     #RSVP {
@@ -623,7 +645,15 @@ input[name="messageMariés"]::placeholder {
         justify-content: center;
         text-align: center; Pour centrer le texte à l'intérieur des éléments enfants */
     }
-    
+
+    #nomReponse , #prenomReponse , #AssisseterontPas{
+        margin-bottom: 1em;
+    }
+
+    .caseReponse{
+        margin-bottom: 2em;
+    }
+
     #hRep{
         font-size: 200%;
     }
@@ -678,9 +708,11 @@ input[name="messageMariés"]::placeholder {
     
     
     .checkbox-field {
+        margin-bottom: 1em;
         display: flex;
         align-items: center;
         justify-content: center;
+        
     }
     
     .checkbox-field input[type="checkbox"] {
@@ -849,7 +881,7 @@ input[name="messageMariés"]::placeholder {
         color: #fff; /* Changement de couleur du texte au survol */
     }
 
-
+/* 
     .sendemail{
         display: flex;
         justify-content: center;
@@ -859,6 +891,24 @@ input[name="messageMariés"]::placeholder {
         border-radius: 5rem;
         padding: 2% 5%;
 
+    } */
+
+    .sendemail{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1%;
+        font-size: 120%;
+        border-radius: 5rem;
+        padding: 0.5% 2.5%;
+        color: #87693a;
+        border: 2px solid #87693a;
+        background-color:#f4e5d5
+    }
+
+    .sendemail:hover{
+        background-color: #87693a; /* Changement de couleur de fond au survol */
+        color: #fff; /* Changement de couleur du texte au survol */
     }
 
     .contact{

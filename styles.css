@@ -912,7 +912,7 @@ input[name="messageMariés"]::placeholder {
     }
 
     .contact{
-        height: 5vh;
+        height: 4vh;
         width: 90vw;
         background-color: #F5EEE6;
         padding: 5%;
@@ -920,7 +920,7 @@ input[name="messageMariés"]::placeholder {
         /* display: flex; Utilisation de Flexbox */
         /* justify-content: center; Les éléments enfants sont distribués de manière à ce que les marges extérieures soient égales */
         
-        font-size: 100%;
+        font-size: 80%;
         
     }
 
